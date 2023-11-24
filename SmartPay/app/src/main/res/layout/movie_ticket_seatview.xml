@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <com.smart.pay.views.MyTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="Gold Cinema, Thane(W)"
+            android:textColor="@color/Black"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <com.smart.pay.views.MyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="Fri, 13th Sep"
+                android:textColor="@color/Black"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+
+            <com.smart.pay.views.MyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/blue_corner_bg"
+                android:padding="8dp"
+                android:text="6.30 PM"
+                android:textColor="@color/Black"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <com.smart.pay.views.MyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/blue_corner_bg"
+                android:padding="8dp"
+                android:text="9.30 PM"
+                android:textColor="@color/Black"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <com.smart.pay.views.MyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/blue_corner_bg"
+                android:padding="8dp"
+                android:text="11.00 PM"
+                android:textColor="@color/Black"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey_light_tertiary" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="vertical">
+
+        <com.smart.pay.views.MyTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="Gold: 150 Rs"
+            android:textColor="@color/Black"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey_light_tertiary" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp">
+
+        <com.smart.pay.views.seatview.SeatView
+            android:id="@+id/seat_view"
+            android:layout_width="match_parent"
+            android:layout_height="320dp"
+            android:background="#e0e0e0"
+            app:seat_centerLineColor="#ea6060"
+            app:seat_centerLineWidth="1dp"
+            app:seat_checkRegularWhilePickSeat="false"
+            app:seat_drawableLoverLeftNormal="@drawable/ic_seat_lover_normal_l"
+            app:seat_drawableLoverLeftSelected="@drawable/ic_seat_lover_selected_l"
+            app:seat_drawableLoverLeftSold="@drawable/ic_seat_lover_sold_l"
+            app:seat_drawableLoverRightNormal="@drawable/ic_seat_lover_normal_r"
+            app:seat_drawableLoverRightSelected="@drawable/ic_seat_lover_selected_r"
+            app:seat_drawableLoverRightSold="@drawable/ic_seat_lover_sold_r"
+            app:seat_drawableNormal="@drawable/ic_seat_normal"
+            app:seat_drawableSelected="@drawable/ic_seat_selected"
+            app:seat_drawableSold="@drawable/ic_seat_sold"
+            app:seat_maxSelectedCount="5"
+            app:seat_seatNoLeftMargin="10dp"
+            app:seat_seatNoTextColor="#40c6f7"
+            app:seat_seatNoTextSize="10dp"
+            app:seat_seatNoTopMargin="10dp"
+            app:seat_seatNoWidth="20dp"
+            app:seat_showSeatNo="true" />
+
+        <com.smart.pay.views.seatview.SeatThumbnailView
+            android:id="@+id/thumbnail_view"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            app:seat_drawableLoverLeftNormal="@drawable/ic_seat_lover_normal_l"
+            app:seat_drawableLoverLeftSelected="@drawable/ic_seat_lover_selected_l"
+            app:seat_drawableLoverLeftSold="@drawable/ic_seat_lover_sold_l"
+            app:seat_drawableLoverRightNormal="@drawable/ic_seat_lover_normal_r"
+            app:seat_drawableLoverRightSelected="@drawable/ic_seat_lover_selected_r"
+            app:seat_drawableLoverRightSold="@drawable/ic_seat_lover_sold_r"
+            app:seat_drawableNormal="@drawable/ic_seat_normal"
+            app:seat_drawableSelected="@drawable/ic_seat_selected"
+            app:seat_drawableSold="@drawable/ic_seat_sold"
+            app:seat_thumbnailBackground="@drawable/seat_thumbnail_background"
+            app:seat_thumbnailRangeLineColor="#ff0000"
+            app:seat_thumbnailRangeLineWidth="1dp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <Button
+            android:id="@+id/btn1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:text="Option 1" />
+
+        <Button
+            android:id="@+id/btn2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:text="Option 2" />
+
+        <Button
+            android:id="@+id/btn3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:text="Option 3" />
+
+        <Button
+            android:id="@+id/btn4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:text="Option 4" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/blue_corner_bg"
+        android:text="Book Seat"
+        android:textColor="@color/colorPrimary" />
+
+</LinearLayout>

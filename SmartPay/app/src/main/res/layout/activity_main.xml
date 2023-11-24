@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/material_drawer_background"
+    tools:context=".activity.wallet.HomeActivity">
+
+    <include layout="@layout/custom_toolbar" />
+
+    <FrameLayout
+        android:id="@+id/mainContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar" />
+
+    <com.volcaniccoder.bottomify.BottomifyNavigationView
+        android:id="@+id/bottomify_nav"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        app:active_color="@color/colorPrimary"
+        app:animation_duration="300"
+        app:item_padding="4dp"
+        app:item_text_size="10sp"
+        app:menu="@menu/home_bottom_menu"
+        app:passive_color="@color/colorAccent"
+        app:pressed_color="@color/colorPrimary"
+        app:scale_percent="5" />
+
+
+</RelativeLayout>

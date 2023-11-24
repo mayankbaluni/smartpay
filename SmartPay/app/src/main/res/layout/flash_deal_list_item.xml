@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="110dp"
+    android:layout_height="160dp"
+    android:background="@drawable/flash_deal_bg"
+    android:orientation="vertical"
+    android:paddingBottom="5dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/flash_deal_image"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/grey_border_ring"
+        android:padding="5dp"
+        android:src="@mipmap/ic_launcher" />
+
+    <com.smart.pay.views.MyTextView
+        android:id="@+id/flash_deal_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:padding="2dp"
+        android:text="Induction Bottom Kadhai"
+        android:textColor="@color/colorPrimary"
+        android:textSize="12sp" />
+
+    <com.smart.pay.views.MyTextView
+        android:id="@+id/flash_deal_discount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:padding="2dp"
+        android:text="Upto 50% off"
+        android:textColor="@color/textSub"
+        android:textSize="12sp" />
+
+</LinearLayout>
+

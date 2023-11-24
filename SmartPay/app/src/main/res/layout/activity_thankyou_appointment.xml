@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e8e8e8">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"></include>
+
+    <LinearLayout
+        android:id="@+id/lin1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/rect"
+        android:orientation="vertical"
+        android:paddingBottom="10dp">
+
+        <com.smart.pay.views.MyTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:text="Thanks for appointment!"
+            android:textColor="@color/Tex"
+            android:textSize="25dp" />
+
+        <View
+
+            android:layout_width="250dp"
+            android:layout_height="5dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/dash_line" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="200dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:src="@mipmap/ic_thank_you" />
+
+        <View
+            android:layout_width="250dp"
+            android:layout_height="5dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/dash_line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="05dp"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:paddingRight="10dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="10dp">
+
+                <com.smart.pay.views.MyTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:text="1x"
+                    android:textColor="@color/textSub"
+                    android:textSize="20dp"
+                    android:visibility="invisible" />
+
+                <com.smart.pay.views.MyTextView
+                    android:id="@+id/thanksServiceName"
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="Service name"
+                    android:textColor="@color/textSub"
+                    android:textSize="18dp" />
+
+                <com.smart.pay.views.MyTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="25dp"
+                    android:text="46,500 RS"
+                    android:textColor="@color/textSub"
+                    android:textSize="18dp"
+                    android:visibility="invisible" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+
+                <com.smart.pay.views.MyTextView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:text="Appointment Time"
+                    android:textColor="@color/textSub"
+                    android:textSize="10dp"
+                    android:textStyle="italic" />
+
+                <com.smart.pay.views.MyTextView
+                    android:id="@+id/appointmentDate"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginTop="10dp"
+                    android:text="Date:- "
+                    android:textColor="@color/textSub"
+                    android:textSize="14dp"
+                    android:textStyle="italic|bold" />
+
+
+                <com.smart.pay.views.MyTextView
+                    android:id="@+id/appointmentTime"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginTop="10dp"
+                    android:text="Time:- "
+                    android:textColor="@color/textSub"
+                    android:textSize="14dp"
+                    android:textStyle="italic|bold" />
+
+
+            </LinearLayout>
+
+            <View
+
+                android:layout_width="250dp"
+                android:layout_height="5dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/dash_line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="05dp"
+                android:orientation="horizontal"
+
+                android:paddingTop="10dp">
+
+                <com.smart.pay.views.MyTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="4"
+                    android:gravity="center"
+                    android:text="TOTAL"
+                    android:textColor="@color/textSub"
+                    android:textSize="@dimen/text" />
+
+                <com.smart.pay.views.MyTextView
+                    android:id="@+id/totalFees"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+
+                    android:gravity="right"
+                    android:text="$1"
+                    android:textColor="@color/red"
+                    android:textSize="25dp" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <com.smart.pay.views.MyTextView
+            android:id="@+id/txtYouAppointmentsSection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/orange_click_bg"
+            android:gravity="center"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="10dp"
+            android:text="Go To Your Appointments"
+            android:textColor="@color/white"
+            android:textSize="18dp" />
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lin1"
+        android:layout_alignStart="@+id/lin1"
+        android:layout_alignLeft="@+id/lin1"
+        android:layout_alignEnd="@+id/lin1"
+        android:layout_alignRight="@+id/lin1"
+        android:src="@drawable/line" />
+
+
+</RelativeLayout>

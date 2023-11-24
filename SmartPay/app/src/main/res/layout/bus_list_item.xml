@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:background="@drawable/edit_text_bg3"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp"
+        android:paddingTop="10dp"
+        android:paddingRight="5dp"
+        android:paddingBottom="5dp">
+
+        <com.smart.pay.views.MyTextView
+            android:id="@+id/travelsName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jagdabmba Shubham Travels"
+            android:textColor="@color/Black"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <com.smart.pay.views.MyTextView
+            android:id="@+id/busPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="10dp"
+            android:text="580"
+            android:textColor="@color/Black"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+
+    <com.smart.pay.views.MyTextView
+        android:id="@+id/busType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:padding="5dp"
+        android:text="AC Sleeper 2+1 Bharat Benz"
+        android:textColor="@color/textSub"
+        android:textSize="12sp" />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey_light_tertiary" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp">
+
+        <com.smart.pay.views.MyTextView
+            android:id="@+id/busArrivalTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="10dp"
+            android:text="8:30 PM"
+            android:textColor="@color/Black"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp">
+
+        <com.smart.pay.views.MyTextView
+            android:id="@+id/busSeats"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="10dp"
+            android:text="30 Seats"
+            android:textColor="@color/textSub"
+            android:textSize="14sp" />
+
+
+        <com.smart.pay.views.MyTextView
+            android:id="@+id/busTotalDuration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="10h 45m"
+            android:textColor="@color/textSub"
+            android:textSize="14sp" />
+
+
+        <com.smart.pay.views.MyTextView
+            android:id="@+id/busReachTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="10dp"
+            android:text="7:45 AM"
+            android:textColor="@color/textSub"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp"
+        android:paddingTop="5dp"
+        android:paddingRight="5dp"
+        android:paddingBottom="10dp">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <com.smart.pay.views.MyTextView
+                android:id="@+id/busRatings"
+                android:layout_width="36dp"
+                android:layout_height="32dp"
+                android:layout_gravity="center"
+                android:background="@drawable/green_rounded_bg"
+                android:gravity="center"
+                android:text="4.2"
+                android:textColor="@color/white"
+                android:textSize="10sp"
+                android:textStyle="bold" />
+
+            <com.smart.pay.views.MyTextView
+                android:id="@+id/busTotalRatings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:gravity="center"
+                android:text="25 Ratings"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="10sp" />
+
+        </LinearLayout>
+
+        <com.smart.pay.views.MyTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Boarding &amp; Drop Point"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="10sp" />
+
+
+        <com.smart.pay.views.MyTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:text="Cancellation Policy"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="10sp" />
+
+
+    </RelativeLayout>
+
+</LinearLayout>

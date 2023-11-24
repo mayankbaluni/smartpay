@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        card_view:cardCornerRadius="2dp"
+        card_view:cardElevation="2dp"
+        card_view:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:id="@+id/layout11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.smart.pay.views.MyTextView
+                android:id="@+id/inbox_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:maxLines="3"
+                android:padding="10dp"
+                android:text="Title"
+                android:textColor="@color/Black"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/inbox_image"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_below="@+id/inbox_title"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/placeholder" />
+
+            <TextView
+                android:id="@+id/txt_article_desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/inbox_image"
+                android:fontFamily="sans-serif"
+                android:maxLines="3"
+                android:padding="10dp"
+                android:textColor="@color/global_color_accent"
+                android:textSize="10dp" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <TextView
+                    android:id="@+id/message_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_weight="1"
+                    android:background="@color/background_clr"
+                    android:drawableLeft="@drawable/ic_action_date"
+                    android:fontFamily="sans-serif"
+                    android:gravity="center"
+                    android:maxLines="3"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="7dp"
+                    android:text="2/10/2016"
+                    android:textColor="@color/global_color_primary_dark"
+                    android:textSize="10dp" />
+
+
+                <TextView
+                    android:id="@+id/txt_article_likes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_weight="1"
+                    android:background="@color/background_clr"
+                    android:drawableLeft="@drawable/ic_action_like"
+                    android:fontFamily="sans-serif"
+                    android:gravity="center"
+                    android:maxLines="3"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="7dp"
+                    android:text="2016"
+                    android:textColor="@color/global_color_primary_dark"
+                    android:textSize="10dp" />
+
+
+                <TextView
+                    android:id="@+id/txt_article_share"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_weight="1"
+                    android:background="@color/background_clr"
+                    android:drawableLeft="@drawable/ic_action_share2"
+                    android:fontFamily="sans-serif"
+                    android:gravity="center"
+                    android:maxLines="3"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="7dp"
+                    android:text="SHARE"
+                    android:textColor="@color/global_color_primary_dark"
+                    android:textSize="10dp" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+</FrameLayout>

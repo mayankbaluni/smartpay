@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+
+        <com.smart.pay.views.MyTextView
+            android:id="@+id/btnLogout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/logout_button_bg"
+            android:drawableLeft="@mipmap/ic_drawer_logout"
+            android:drawablePadding="5dp"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="Logout"
+            android:textColor="@color/grey_dark_secondary"
+            android:textSize="14sp" />
+
+
+        <com.smart.pay.views.MyTextView
+            android:id="@+id/btnShare"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/logout_button_bg"
+            android:drawableLeft="@mipmap/ic_drawer_share"
+            android:drawablePadding="5dp"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="Share"
+            android:textColor="@color/grey_dark_secondary"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:padding="5dp"
+        android:text="@string/copyright"
+        android:textColor="@color/colorAccent"
+        android:textSize="12sp" />
+
+</LinearLayout>

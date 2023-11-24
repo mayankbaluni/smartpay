@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f2f3f4"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar" />
+
+    <com.smart.pay.views.StickyScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:focusable="true"
+        android:scrollbars="none">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="30dp">
+
+            <include
+                layout="@layout/category_top_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_margin="8dp" />
+
+
+            <com.smart.pay.views.ExpandableHeightGridView
+                android:id="@+id/product_grid_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/topLayout"
+                android:layout_margin="5dp"
+                android:layout_marginTop="10dp"
+                android:background="#f2f3f4"
+                android:horizontalSpacing="5dp"
+                android:isScrollContainer="false"
+                android:numColumns="2"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="5dp"
+                android:visibility="visible" />
+
+
+        </RelativeLayout>
+
+    </com.smart.pay.views.StickyScrollView>
+</LinearLayout>

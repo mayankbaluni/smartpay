@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="2dp"
+    android:background="@drawable/edit_text_light_grey_rounded"
+    android:orientation="horizontal"
+    android:padding="8dp">
+
+    <ImageView
+        android:id="@+id/imgTypeOfSale"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignRight="@id/imgTypeOfSale"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/green_ring"
+        android:padding="8dp"
+        android:src="@mipmap/ic_money2" />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@+id/imgTypeOfSale"
+        android:orientation="vertical">
+
+        <com.smart.pay.views.MyTextView
+            android:id="@+id/walletHeading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:layout_marginTop="5dp"
+            android:padding="5dp"
+            android:text="Walled Credited"
+            android:textColor="#000"
+            android:textSize="16sp" />
+
+
+        <com.smart.pay.views.MyTextView
+            android:id="@+id/trans_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:padding="5dp"
+            android:text="Money added to wallet"
+            android:textColor="@color/grey_light_secondary"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="top"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="5dp"
+        android:gravity="top"
+        android:orientation="vertical">
+
+        <com.smart.pay.views.MyTextView
+            android:id="@+id/creditedAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="10dp"
+            android:padding="5dp"
+            android:text="+$130"
+            android:textColor="@color/colorGreenLight"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+
+        <com.smart.pay.views.MyTextView
+            android:id="@+id/creditedDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="10dp"
+            android:text=""
+            android:textColor="@color/grey_dark_secondary"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

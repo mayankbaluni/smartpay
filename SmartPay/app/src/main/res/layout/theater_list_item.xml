@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:background="@drawable/edit_text_bg3"
+    android:orientation="vertical"
+    android:paddingTop="5dp"
+    android:paddingBottom="10dp">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <com.smart.pay.views.MyTextView
+            android:id="@+id/theaterName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:text="Cinepolice Vivian Mall, Thane(W)"
+            android:textColor="@color/Black"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+
+        <com.smart.pay.views.MyTextView
+            android:id="@+id/theaterDistance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:text="29 km"
+            android:textColor="@color/Black"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+
+    <com.smart.pay.views.ExpandableHeightGridView
+        android:id="@+id/showTimesGrid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="5dp"
+        android:columnWidth="40dp"
+        android:gravity="center"
+        android:horizontalSpacing="8dp"
+        android:numColumns="4"
+        android:padding="5dp"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="10dp">
+
+    </com.smart.pay.views.ExpandableHeightGridView>
+
+</LinearLayout>

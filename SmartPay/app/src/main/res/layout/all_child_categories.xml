@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar" />
+
+    <com.smart.pay.views.ExpandableHeightGridView
+        android:id="@+id/topCategoriesGridView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:background="#f2f3f4"
+        android:horizontalSpacing="2dp"
+        android:isScrollContainer="false"
+        android:numColumns="3"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="2dp">
+
+    </com.smart.pay.views.ExpandableHeightGridView>
+
+    <ProgressBar
+        android:id="@+id/topCategoriesProgressBar"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center" />
+
+
+</RelativeLayout>

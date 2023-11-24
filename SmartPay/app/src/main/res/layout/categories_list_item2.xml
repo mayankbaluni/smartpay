@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:background="@drawable/no_round_bg1"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="75dp"
+        android:layout_height="100dp"
+        android:layout_margin="5dp"
+        android:orientation="vertical">
+
+        <com.smart.pay.views.MyTextView
+            android:id="@+id/category_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="4dp"
+            android:gravity="center"
+            android:padding="2dp"
+            android:text="All Categories"
+            android:textColor="@color/Black"
+            android:textSize="10sp" />
+
+
+        <ImageView
+            android:id="@+id/category_image"
+            android:layout_width="50dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:src="@mipmap/ic_launcher" />
+
+
+    </LinearLayout>
+</LinearLayout>

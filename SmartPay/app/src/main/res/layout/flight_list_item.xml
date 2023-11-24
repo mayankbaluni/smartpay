@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:background="@drawable/edit_text_bg3"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+    <com.smart.pay.views.MyTextView
+        android:id="@+id/airlineName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:text="SpiceJet SG - 421"
+        android:textColor="@color/textSub"
+        android:textSize="18sp" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp">
+
+        <ImageView
+            android:id="@+id/imgAirline"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:padding="5dp"
+            android:src="@drawable/ic_spicejet" />
+
+
+        <LinearLayout
+            android:id="@+id/llTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@+id/imgAirline"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+
+            <com.smart.pay.views.MyTextView
+                android:id="@+id/flightArrivalTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="12:05"
+                android:textColor="@color/Black"
+                android:textSize="14sp" />
+
+            <com.smart.pay.views.MyTextView
+                android:id="@+id/flightArrivalStation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="BOM"
+                android:textColor="@color/textSub"
+                android:textSize="14sp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llDuration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/llTime"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <com.smart.pay.views.MyTextView
+                android:id="@+id/flightTotalDuration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="7h 40"
+                android:textColor="@color/textSub"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center"
+                    android:src="@drawable/radioblack" />
+
+
+                <ProgressBar
+                    android:id="@+id/progressBar1"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:indeterminate="false"
+                    android:max="100"
+                    android:progress="100"
+                    android:progressTint="@color/grey_light_primary"
+                    android:secondaryProgressTint="@color/grey_light_tertiary" />
+
+                <ImageView
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center"
+                    android:src="@drawable/radioblack" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/llFlightDeparture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/llDuration"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <com.smart.pay.views.MyTextView
+                android:id="@+id/flightDepartureTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="13:25"
+                android:textColor="@color/Black"
+                android:textSize="14sp" />
+
+            <com.smart.pay.views.MyTextView
+                android:id="@+id/flightDepartureStation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="DEL"
+                android:textColor="@color/textSub"
+                android:textSize="14sp" />
+
+
+        </LinearLayout>
+
+
+        <com.smart.pay.views.MyTextView
+            android:id="@+id/flightPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:text="Rs. 5013"
+            android:textColor="@color/Black"
+            android:textSize="18sp" />
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

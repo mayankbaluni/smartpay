@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/empty_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/img_empty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:src="@mipmap/ic_empty" />
+
+    <TextView
+        android:id="@+id/txtSnap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/img_empty"
+        android:layout_margin="10dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="Oh snap!"
+        android:textColor="@color/grey_dark_secondary"
+        android:textSize="30sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtSnap"
+        android:layout_margin="10dp"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:text="No data to show as of now. Please check back later."
+        android:textColor="@color/grey_dark_secondary"
+        android:textSize="18sp" />
+</RelativeLayout>

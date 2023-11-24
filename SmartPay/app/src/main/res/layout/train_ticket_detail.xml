@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_light_tertiary"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:src="@mipmap/ic_confirm" />
+
+
+        <com.smart.pay.views.MyTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Booking Successful"
+            android:textColor="@color/Black"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <com.smart.pay.views.MyTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="Ticket emailed to your mail id"
+            android:textColor="@color/grey_light_primary" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:src="@mipmap/ic_download" />
+
+
+        <com.smart.pay.views.MyTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="Download Ticket"
+            android:textColor="@color/colorPrimary" />
+
+
+    </LinearLayout>
+
+    <com.smart.pay.views.MyTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edit_text_rounded2"
+        android:drawableRight="@drawable/ic_forward"
+        android:gravity="left|center"
+        android:padding="10dp"
+        android:text="Book More" />
+
+    <com.smart.pay.views.MyTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/edit_text_rounded2"
+        android:drawableRight="@drawable/ic_forward"
+        android:gravity="left|center"
+        android:padding="10dp"
+        android:text="Download Invoice" />
+
+    <com.smart.pay.views.MyTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/edit_text_rounded2"
+        android:drawableRight="@drawable/ic_forward"
+        android:gravity="left|center"
+        android:padding="10dp"
+        android:text="Contact Support" />
+
+</LinearLayout>

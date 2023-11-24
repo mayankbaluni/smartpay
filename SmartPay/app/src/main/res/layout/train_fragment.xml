@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <com.smart.pay.views.StickyScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.2"
+                    android:orientation="vertical">
+
+                    <com.smart.pay.views.MyEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edit_text_no_round_bg"
+                        android:hint="Source Station"
+                        android:padding="16dp"
+                        android:textColor="@color/grey_light_tertiary" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/grey_light_tertiary" />
+
+
+                    <com.smart.pay.views.MyEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:background="@drawable/edit_text_no_round_bg"
+                        android:hint="Destination Station"
+                        android:padding="16dp"
+                        android:textColor="@color/grey_light_tertiary" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/grey_light_tertiary" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="0.8"
+                    android:src="@drawable/ic_down_arrow" />
+
+            </LinearLayout>
+
+
+            <com.smart.pay.views.MyTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/edit_text_no_round_bg"
+                android:padding="16dp"
+                android:text="Departure Date"
+                android:textColor="@color/textSub" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <com.smart.pay.views.MyTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@drawable/edit_text_no_round_bg"
+                        android:text="11 September"
+                        android:textColor="@color/Black"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <com.smart.pay.views.MyTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="18dp"
+                        android:background="@drawable/edit_text_no_round_bg"
+                        android:text="Wednesday"
+                        android:textColor="@color/textSub"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:orientation="horizontal">
+
+                    <com.smart.pay.views.MyTextView
+                        android:layout_width="70dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/textview_rounded_bg"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="11 Sep Today"
+                        android:textColor="@color/textSub"
+                        android:textSize="10sp" />
+
+                    <com.smart.pay.views.MyTextView
+                        android:layout_width="70dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="5dp"
+                        android:background="@drawable/edit_text_rounded"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="12 Sep Thu"
+                        android:textColor="@color/textSub"
+                        android:textSize="10sp" />
+
+                    <com.smart.pay.views.MyTextView
+                        android:layout_width="70dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="5dp"
+                        android:background="@drawable/edit_text_rounded"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="13 Sep Fri"
+                        android:textColor="@color/textSub"
+                        android:textSize="10sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/grey_light_tertiary" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:checked="true" />
+
+                <com.smart.pay.views.MyTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:padding="10dp"
+                    android:text="Show both non-Ac &amp; AC Coaches"
+                    android:textColor="@color/textSub"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/grey_light_tertiary" />
+
+
+            <com.smart.pay.views.MyTextView
+                android:id="@+id/btnSearchTrains"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/blue_rounded_bg"
+                android:gravity="center"
+                android:padding="14dp"
+                android:text="Search Trains"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="20dp"
+                android:src="@drawable/banner3" />
+
+        </LinearLayout>
+    </com.smart.pay.views.StickyScrollView>
+
+</LinearLayout>

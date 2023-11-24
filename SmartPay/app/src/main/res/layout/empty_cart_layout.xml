@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_cart_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+    <com.smart.pay.views.GIFView
+        android:id="@+id/gifImageView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="110dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="50dp" />
+
+
+    <com.smart.pay.views.MyTextView
+        android:id="@+id/txt1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gifImageView"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="There are no items in your cart."
+        android:textColor="@color/grey_light_primary"
+        android:textSize="14sp" />
+
+
+    <com.smart.pay.views.MyTextView
+        android:id="@+id/go_to_homepage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/signinline"
+        android:layout_below="@+id/txt1"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="60dp"
+        android:layout_marginBottom="26dp"
+        android:background="@drawable/blue_rounded_bg"
+        android:elevation="1.5dp"
+        android:gravity="center"
+        android:padding="12dp"
+        android:text="Shop Now"
+        android:textColor="#fff"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>

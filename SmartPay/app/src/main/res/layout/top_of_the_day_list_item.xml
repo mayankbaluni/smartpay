@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="140dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <com.smart.pay.views.MyTextView
+        android:id="@+id/txt_top_of_the_day"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/horizontalview1"
+        android:background="@drawable/subcat_bg"
+        android:drawableRight="@mipmap/ic_forward_primary"
+        android:gravity="center"
+        android:padding="12dp"
+        android:text="Lips"
+        android:textColor="@color/Tex"
+        android:textSize="14sp" />
+
+</LinearLayout>

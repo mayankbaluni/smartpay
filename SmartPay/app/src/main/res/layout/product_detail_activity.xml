@@ -1,0 +1,692 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f2f3f4"
+    tools:context=".activity.mall.ProductDetailActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"></include>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <!--*********product name*********-->
+
+            <LinearLayout
+                android:id="@+id/linear1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/White"
+                android:orientation="horizontal"
+                android:paddingTop="16dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <com.smart.pay.views.MyTextView
+                        android:id="@+id/txtProductName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:lines="2"
+                        android:text=""
+                        android:textColor="@color/Tex"
+                        android:textSize="16dp" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2.6"
+                    android:gravity="right"
+                    android:orientation="vertical">
+
+                    <com.smart.pay.views.MyTextView
+                        android:id="@+id/txtNewPrice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/oneside_roundrect"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="6dp"
+                        android:paddingRight="10dp"
+                        android:paddingBottom="6dp"
+                        android:text=""
+                        android:textColor="@color/White"
+                        android:textSize="16dp" />
+
+                    <com.smart.pay.views.MyTextView
+                        android:id="@+id/txtOldPrice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginTop="6dp"
+                        android:text=""
+                        android:textColor="@color/textSub"
+                        android:textSize="@dimen/textsub" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/image"
+                android:layout_width="match_parent"
+                android:layout_height="230dp"
+                android:layout_below="@+id/linear1"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/White"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <ImageView
+                    android:id="@+id/productImageView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:visibility="gone" />
+
+
+                <com.daimajia.slider.library.SliderLayout
+                    android:id="@+id/mImageSlider"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"></com.daimajia.slider.library.SliderLayout>
+
+                <com.daimajia.slider.library.Indicators.PagerIndicator
+                    android:id="@+id/custom_indicator"
+                    style="@style/AndroidImageSlider_Corner_Pink"
+                    android:layout_gravity="center"
+                    android:gravity="center" />
+
+
+            </LinearLayout>
+
+
+            <!--*****review, rate, add to cart  *************-->
+            <LinearLayout
+                android:id="@+id/linear2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/image"
+                android:background="@drawable/bg_strok"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+
+                <!--*****review, rate*************-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:background="@color/White"
+
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <RatingBar
+                            android:id="@+id/inside_ratingbar"
+                            style="?android:attr/ratingBarStyleSmall"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:isIndicator="false"
+
+                            />
+
+                        <com.smart.pay.views.MyTextView
+                            android:id="@+id/no_of_ratings"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:text="(0)"
+                            android:textColor="@color/textSub"
+                            android:textSize="@dimen/textsub" />
+                    </LinearLayout>
+
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/colordevider"
+
+                        ></View>
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <com.smart.pay.views.MyTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Reviews"
+                            android:textColor="@color/light_green"
+                            android:textSize="@dimen/textsub" />
+
+                        <com.smart.pay.views.MyTextView
+                            android:id="@+id/productReview"
+                            android:layout_width="wrap_content"
+
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:text="(0)"
+                            android:textColor="@color/textSub"
+                            android:textSize="@dimen/textsub" />
+                    </LinearLayout>
+
+                    <View
+
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/colordevider"></View>
+
+                    <LinearLayout
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <com.smart.pay.views.MyTextView
+                            android:id="@+id/txtInStock"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/green_rounded_bg"
+                            android:gravity="center"
+                            android:text="In Stock"
+                            android:textColor="@color/white"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+
+                            />
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <!--********add to cart**********-->
+
+
+                <LinearLayout
+                    android:id="@+id/linear3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:background="@color/White"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <com.smart.pay.views.MyTextView
+                            android:id="@+id/txtAddToCart"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Add to Cart"
+                            android:textColor="@color/textSub"
+                            android:textSize="14sp" />
+
+                        <Button
+                            android:id="@+id/plus"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_marginLeft="16dp"
+                            android:background="@drawable/bg_plus_button"
+                            android:onClick="increaseInteger"
+                            android:padding="2dp" />
+
+                        <com.smart.pay.views.MyTextView
+                            android:id="@+id/cartno"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="16dp"
+                            android:background="#00000000"
+                            android:gravity="center"
+                            android:hint="0"
+                            android:inputType="number"
+                            android:maxLength="1"
+                            android:textColor="@color/textSub"
+                            android:textColorHint="@color/textSub"
+                            android:textSize="14sp" />
+
+                        <Button
+                            android:id="@+id/minus"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_marginLeft="16dp"
+                            android:background="@drawable/bg_minus_button"
+                            android:onClick="decreaseInteger"
+                            android:padding="2dp" />
+                    </LinearLayout>
+
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="16dp"
+                        android:background="@color/colordevider"></View>
+
+
+                    <com.smart.pay.views.MyTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="18dp"
+                        android:gravity="center"
+                        android:text="Verified by SmartPay"
+                        android:textColor="@color/light_green"
+                        android:textSize="@dimen/textsub" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/linear4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linear2"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bg_strok"
+                android:orientation="horizontal"
+                android:padding="16dp"
+                android:visibility="visible"
+
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/guard" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.07"
+                    android:orientation="vertical">
+
+                    <com.smart.pay.views.MyTextView
+                        android:id="@+id/gurantee_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="@color/Tex"
+                        android:textSize="@dimen/text" />
+
+                    <com.smart.pay.views.MyTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="100% Payment Protection. 7 days easy return in case item is defective or damaged or different from what was described."
+                        android:textColor="@color/textSub"
+                        android:textSize="@dimen/textsub" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!--************Location**************-->
+
+            <LinearLayout
+                android:id="@+id/linear5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linear4"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bg_strok"
+                android:orientation="horizontal"
+                android:padding="16dp"
+                android:visibility="visible">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/locationpin" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.07"
+                    android:orientation="vertical"
+
+                    >
+
+                    <com.smart.pay.views.MyTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Specify pincode to find delivery at your location"
+                        android:textColor="@color/Tex"
+                        android:textSize="15sp" />
+
+                    <!--*******pincode*********-->
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_marginTop="16dp"
+                        android:orientation="horizontal">
+
+                        <com.smart.pay.views.MyTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Pincode :"
+                            android:textColor="@color/textSub"
+                            android:textSize="@dimen/textsub" />
+
+                        <com.smart.pay.views.MyTextView
+                            android:id="@+id/changeno"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="6dp"
+                            android:layout_weight="1"
+                            android:text="@string/code"
+                            android:textColor="@color/textSub"
+                            android:textSize="@dimen/textsub"
+
+                            />
+
+
+                        <com.smart.pay.views.MyTextView
+                            android:id="@+id/change"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="16dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/changebg"
+                            android:gravity="center"
+                            android:paddingLeft="7dp"
+                            android:paddingTop="4dp"
+                            android:paddingRight="7dp"
+                            android:paddingBottom="4dp"
+                            android:text="Change"
+                            android:textColor="@color/White"
+                            android:textSize="@dimen/textsub" />
+                    </LinearLayout>
+
+                    <com.smart.pay.views.MyTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:drawableLeft="@drawable/checked"
+                        android:drawablePadding="6dp"
+                        android:text="Item is available on this pincode"
+                        android:textColor="@color/textSub"
+                        android:textSize="@dimen/textsub" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:orientation="horizontal">
+
+
+                        <com.smart.pay.views.MyTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:drawableLeft="@drawable/checked"
+                            android:drawablePadding="6dp"
+                            android:text="Delivered in 2 -4 days"
+                            android:textColor="@color/textSub"
+                            android:textSize="@dimen/textsub" />
+
+                        <com.smart.pay.views.MyTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="6dp"
+                            android:text="+ 30 Rs"
+                            android:textColor="@color/red"
+                            android:textSize="@dimen/textsub" />
+                    </LinearLayout>
+
+                    <com.smart.pay.views.MyTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:drawableLeft="@drawable/checked"
+                        android:drawablePadding="6dp"
+                        android:text="Cash On Delivery available"
+                        android:textColor="@color/textSub"
+                        android:textSize="@dimen/textsub" />
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <!--************Item details**************-->
+
+            <LinearLayout
+                android:id="@+id/linear6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linear5"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/bg_strok"
+                android:orientation="horizontal"
+                android:padding="16dp"
+                android:visibility="visible">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.07"
+                    android:orientation="vertical"
+
+                    >
+
+                    <com.smart.pay.views.MyTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Item Details"
+                        android:textColor="@color/Tex"
+                        android:textSize="@dimen/text" />
+
+
+                    <com.smart.pay.views.MyTextView
+                        android:id="@+id/txtProductDescription"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:drawablePadding="6dp"
+                        android:text=""
+                        android:textColor="@color/textSub"
+                        android:textSize="@dimen/textsub" />
+
+
+                    <LinearLayout
+                        android:id="@+id/save"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/linear3"
+                        android:layout_marginTop="0dp"
+                        android:orientation="vertical"
+
+                        >
+
+                        <com.smart.pay.views.MyTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:background="@drawable/view_more_bg"
+                            android:gravity="center"
+                            android:paddingLeft="15dp"
+                            android:paddingTop="6dp"
+                            android:paddingRight="15dp"
+                            android:paddingBottom="6dp"
+                            android:text="View More"
+                            android:textColor="@color/White"
+                            android:textSize="@dimen/textsub" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <include
+                layout="@layout/product_rating_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linear6"
+                android:layout_marginTop="10dp"
+                android:visibility="visible" />
+
+
+            <LinearLayout
+                android:id="@+id/linear7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ratingLayout"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bg_strok"
+                android:orientation="vertical"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:visibility="visible">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.smart.pay.views.MyTextView
+                        android:id="@+id/peopviewed"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/ratingLayout"
+                        android:layout_alignParentLeft="true"
+                        android:padding="10dp"
+                        android:text="Similar Products"
+                        android:textColor="@color/Tex"
+                        android:textSize="15sp"
+                        android:visibility="visible" />
+
+
+                    <com.smart.pay.views.MyTextView
+                        android:id="@+id/view_all_similar_products"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/ratingLayout"
+                        android:layout_alignParentRight="true"
+                        android:padding="10dp"
+                        android:text="View All"
+                        android:textColor="@color/colorBlueLight"
+                        android:textSize="15sp"
+                        android:visibility="visible" />
+
+                </RelativeLayout>
+
+
+                <com.smart.pay.views.ExpandableHeightGridView
+                    android:id="@+id/similar_products_grid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="#f2f3f4"
+                    android:horizontalSpacing="5dp"
+                    android:isScrollContainer="false"
+                    android:numColumns="2"
+                    android:stretchMode="columnWidth"
+                    android:verticalSpacing="5dp"
+                    android:visibility="gone" />
+
+
+                <ProgressBar
+                    android:id="@+id/similar_product_progress"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp" />
+
+            </LinearLayout>
+
+
+            <!--********RECYCLERVIEW ************-->
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+    <View
+        android:id="@+id/div0"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/toolbar"
+        android:background="@color/strok">
+
+    </View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="16dp"
+        android:layout_weight="2.6"
+        android:gravity="right"
+        android:orientation="vertical">
+
+        <com.smart.pay.views.MyTextView
+            android:id="@+id/btnAddToCart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/oneside_roundrect"
+            android:paddingLeft="14dp"
+            android:paddingTop="10dp"
+            android:paddingRight="14dp"
+            android:paddingBottom="10dp"
+            android:text="ADD TO CART"
+            android:textColor="@color/White"
+            android:textSize="16dp" />
+    </LinearLayout>
+
+</RelativeLayout>

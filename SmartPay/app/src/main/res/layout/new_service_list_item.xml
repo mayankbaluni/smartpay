@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:background="@drawable/edit_text_rounded2">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+
+        <RelativeLayout
+            android:id="@+id/rl1"
+            android:layout_width="match_parent"
+            android:layout_height="140dp">
+
+            <ImageView
+                android:id="@+id/service_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@mipmap/service_placeholder" />
+
+
+            <com.smart.pay.views.MyTextView
+                android:id="@+id/seller_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:background="@color/black1"
+                android:padding="5dp"
+                android:text="Mumbai, Maharashtra"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+
+        <com.smart.pay.views.MyTextView
+            android:id="@+id/service_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rl1"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="16dp"
+            android:padding="5dp"
+            android:text="Vanity Cube - Be Youthful"
+            android:textColor="#000"
+            android:textSize="18sp" />
+
+
+        <TextView
+            android:id="@+id/service_detail_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/service_name"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="16dp"
+            android:padding="5dp"
+            android:text="Service Details:"
+            android:textColor="#000"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/service_details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/service_detail_text"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:padding="5dp"
+            android:text="Facial, Threading, Waxing"
+            android:textColor="@color/grey_dark_secondary"
+            android:textSize="13sp" />
+
+
+        <TextView
+            android:id="@+id/service_highlight_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/service_details"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="16dp"
+            android:padding="5dp"
+            android:text="Highlights:"
+            android:textColor="#000"
+            android:textSize="14sp" />
+
+
+        <TextView
+            android:id="@+id/service_highlights"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/service_highlight_text"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:lines="2"
+            android:padding="5dp"
+            android:text="Female Therapist, For Women Only, Mondya To Sunday"
+            android:textColor="@color/grey_dark_secondary"
+            android:textSize="13sp" />
+
+        <View
+            android:id="@+id/view1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/service_highlights"
+            android:background="@color/grey_light_secondary" />
+
+        <com.smart.pay.views.MyTextView
+            android:id="@+id/service_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/view1"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="16dp"
+            android:padding="5dp"
+            android:text="$ 150"
+            android:textColor="#000"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/service_price"
+            android:weightSum="2">
+
+
+            <com.smart.pay.views.MyTextView
+                android:id="@+id/btnBookNow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/blue_rounded_bg"
+                android:elevation="1.5dp"
+                android:gravity="center"
+                android:padding="12dp"
+                android:text="BOOK NOW"
+                android:textColor="#fff"
+                android:textSize="16sp" />
+
+            <com.smart.pay.views.MyTextView
+                android:id="@+id/btnViewSeller"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/seller_button_bg"
+                android:elevation="1.5dp"
+                android:gravity="center"
+                android:padding="12dp"
+                android:text="VIEW SELLER"
+                android:textColor="@color/colorPrimary"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

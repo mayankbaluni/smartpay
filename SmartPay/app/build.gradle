@@ -1,0 +1,155 @@
+apply plugin: 'com.android.application'
+
+allprojects {
+    repositories {
+        maven { url 'https://jitpack.io' }
+    }
+}
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion "29.0.0"
+    defaultConfig {
+        applicationId "com.smart.pay"
+        minSdkVersion 19
+        targetSdkVersion 29
+        versionCode 1
+        multiDexEnabled true
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            buildConfigField "String", "BASE_URL", '"http://workoholicks.com/demo/smartpay/admin/"'
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            buildConfigField "String", "BASE_URL", '"http://workoholicks.com/demo/smartpay/admin/"'
+
+            ext.enableCrashlytics = false
+        }
+
+    }
+    packagingOptions {
+        exclude '.readme'
+        exclude 'LICENSE.txt'
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/DEPENDENCIES.txt'
+        exclude 'META-INF/LGPL2.1'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/README.txt'
+        exclude 'META-INF/dependencies.txt'
+        exclude 'META-INF/license.txt'
+        exclude 'META-INF/notice.txt'
+        exclude 'META-INF/services/javax.annotation.processing.Processor'
+        exclude 'META-INF/MANIFEST.MF'
+    }
+
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.appcompat:appcompat:1.0.2'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test:runner:1.2.0'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+
+    implementation 'com.github.volsahin:bottomify-navigation-view:v1.0.1'
+    implementation 'com.budiyev.android:code-scanner:2.1.0'
+    //  implementation 'com.github.kenglxn.QRGen:javase:2.6.0'
+
+    implementation('androidx.multidex:multidex:2.0.0') {
+        exclude module: 'support-v4'
+    }
+
+
+    implementation 'com.daimajia.androidanimations:library:1.0.3@aar'
+    implementation 'com.squareup.picasso:picasso:2.3.2'
+    implementation 'com.nineoldandroids:library:2.4.0'
+    implementation 'com.daimajia.slider:library:1.1.5@aar'
+    implementation 'androidx.recyclerview:recyclerview:1.0.0'
+
+    implementation('com.mikepenz:materialdrawer:6.0.8@aar') {
+        transitive = true
+    }
+
+
+    //for event bus
+    implementation 'org.greenrobot:eventbus:3.1.1'
+
+    //For resolving android 9 bug
+    implementation 'com.airbnb.android:lottie:2.7.0'
+
+
+    //For horizontal GridView
+    implementation 'androidx.leanback:leanback:1.0.0'
+    implementation 'com.alibaba:fastjson:1.1.54.android'
+
+    //Data Vault
+    implementation files('libs/DataVaultLib-2.3.3.13.jar')
+    implementation 'org.apache.commons:commons-lang3:3.6'
+
+
+    //For Circular ImageView
+    implementation 'de.hdodenhof:circleimageview:2.2.0'
+
+    //Credit Card View
+
+    implementation 'com.vinaygaba:creditcardview:1.0.4'
+
+    //CountryCode Picker
+
+    implementation 'com.hbb20:ccp:2.3.2'
+    //Retrofit
+    implementation 'com.google.code.gson:gson:2.6.2'
+    implementation 'com.squareup.retrofit2:retrofit:2.3.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.3.0'
+//    implementation 'com.squareup.retrofit2:adapter-rxjava2:2.3.0'
+    implementation 'com.squareup.okhttp3:okhttp:3.0.1'
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.9.1'
+
+    //Barcode generation
+
+    implementation 'com.journeyapps:zxing-android-embedded:4.0.0'
+
+    //For Paypal
+
+    implementation 'com.paypal.sdk:paypal-android-sdk:2.14.2'
+
+
+    implementation 'com.google.firebase:firebase-messaging:17.3.4'
+
+    // Room
+    implementation 'androidx.room:room-runtime:2.0.0'
+    annotationProcessor 'androidx.room:room-compiler:2.0.0'
+
+    // Custom ProgressBar
+    implementation 'com.github.castorflex.smoothprogressbar:library:1.1.0'
+    implementation 'com.github.castorflex.smoothprogressbar:library-circular:1.2.0'
+
+
+    //GIF IMAGEVIEW
+
+    //For Circular ImageView
+    implementation 'de.hdodenhof:circleimageview:2.2.0'
+
+
+    //For delivery tracking timeline
+    implementation 'com.github.vipulasri:timelineview:1.1.0'
+
+    //For MutliProgressbar
+    implementation 'com.aseem.versatileprogressbar:MultiProgressBar:1.1.0'
+
+    //For TicketView
+    implementation 'com.github.mreram:ticketview:1.0.0'
+
+
+}
+apply plugin: 'com.google.gms.google-services'

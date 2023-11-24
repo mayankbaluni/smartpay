@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <include layout="@layout/toolbar"></include>
+
+    <ImageView
+        android:id="@+id/imgProcess"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_below="@+id/toolbar"
+        android:layout_margin="10dp"
+        android:src="@drawable/logo_here" />
+
+
+    <TextView
+        android:id="@+id/txtLogo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imgProcess"
+        android:gravity="center"
+        android:text="Click the image to change the logo" />
+
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtLogo"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:orientation="vertical">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/businessname1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colortext"
+            android:textColorHint="@color/colorhint">
+
+            <com.smart.pay.views.MyEditText
+                android:id="@+id/edtBusinessName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="46dp"
+                android:layout_marginRight="46dp"
+                android:background="#0000"
+                android:drawablePadding="12dp"
+                android:gravity="left"
+                android:hint="Business name"
+                android:lines="1"
+                android:padding="14dp"
+                android:textColor="@color/Tex"
+                android:textColorHint="@color/textSub"
+                android:textSize="@dimen/text"
+
+
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="56dp"
+            android:layout_marginRight="56dp"
+            android:background="@color/red" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/email1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colortext"
+            android:textColorHint="@color/colorhint">
+
+            <com.smart.pay.views.MyEditText
+                android:id="@+id/edtEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="46dp"
+                android:layout_marginRight="46dp"
+                android:background="#0000"
+                android:drawablePadding="12dp"
+                android:gravity="left"
+                android:hint="Email"
+                android:lines="1"
+                android:padding="14dp"
+                android:textColor="@color/Tex"
+                android:textColorHint="@color/textSub"
+                android:textSize="@dimen/text"
+
+
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="56dp"
+            android:layout_marginRight="56dp"
+            android:background="@color/red" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/phone1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colortext"
+            android:textColorHint="@color/colorhint">
+
+            <com.smart.pay.views.MyEditText
+                android:id="@+id/edtPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="46dp"
+                android:layout_marginRight="46dp"
+                android:background="#0000"
+                android:drawablePadding="12dp"
+                android:gravity="left"
+                android:hint="Phone no."
+                android:lines="1"
+                android:padding="14dp"
+                android:textColor="@color/Tex"
+                android:textColorHint="@color/textSub"
+                android:textSize="@dimen/text"
+
+
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="56dp"
+            android:layout_marginRight="56dp"
+            android:background="@color/red" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/address1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colortext"
+            android:textColorHint="@color/colorhint">
+
+            <com.smart.pay.views.MyEditText
+                android:id="@+id/edtAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="46dp"
+                android:layout_marginRight="46dp"
+                android:background="#0000"
+                android:drawablePadding="12dp"
+                android:gravity="left"
+                android:hint="Business Address"
+                android:lines="1"
+                android:padding="14dp"
+                android:textColor="@color/Tex"
+                android:textColorHint="@color/textSub"
+                android:textSize="@dimen/text"
+
+
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="56dp"
+            android:layout_marginRight="56dp"
+            android:background="@color/red" />
+
+
+    </LinearLayout>
+
+    <com.smart.pay.views.MyTextView
+        android:id="@+id/btnBusinessSignup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linear"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="60dp"
+        android:layout_marginBottom="26dp"
+        android:background="@drawable/rect2"
+        android:elevation="1.5dp"
+        android:gravity="center"
+        android:padding="12dp"
+        android:text="Register as Seller"
+        android:textColor="#fff"
+        android:textSize="@dimen/text" />
+</RelativeLayout>

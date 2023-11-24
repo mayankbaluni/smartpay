@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f2f3f4">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar_filter"></include>
+
+    <View
+        android:id="@+id/div1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/toolbar"
+        android:background="@color/colordevider"></View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/div1"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.1"
+            android:background="@drawable/categoriesbg1"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+
+                    >
+
+                    <com.smart.pay.views.MyTextView
+                        android:id="@+id/categories"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="16dp"
+                        android:text="CATEGORIES"
+                        android:textColor="@color/Tex" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/colordevider"></View>
+
+
+                    <com.smart.pay.views.MyTextView
+                        android:id="@+id/brands"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="16dp"
+                        android:text="BRANDS"
+                        android:textColor="@color/Tex" />
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/colordevider"></View>
+
+
+                    <com.smart.pay.views.MyTextView
+                        android:id="@+id/colour"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="16dp"
+                        android:text="COLOURS"
+                        android:textColor="@color/Tex" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/colordevider"></View>
+
+
+                    <com.smart.pay.views.MyTextView
+                        android:id="@+id/price"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="16dp"
+                        android:text="PRICE"
+                        android:textColor="@color/Tex" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/colordevider"></View>
+
+
+                    <com.smart.pay.views.MyTextView
+                        android:id="@+id/discount"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="16dp"
+                        android:text="DISCOUNT"
+                        android:textColor="@color/Tex" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/colordevider"></View>
+
+                </LinearLayout>
+
+                <com.smart.pay.views.MyTextView
+                    android:id="@+id/clearall"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/colorRedDark"
+                    android:gravity="center"
+                    android:padding="16dp"
+                    android:text="CLEAR ALL"
+                    android:textColor="@color/White"
+
+                    />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.6"
+            android:background="#fffdfe"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#f2f3f4">
+
+
+                <!--***************LISTVIEW BRAND*****************-->
+                <LinearLayout
+                    android:id="@+id/brandlist"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:id="@+id/search"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/searchbg"
+                        android:orientation="vertical">
+
+                        <com.smart.pay.views.MyEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#00000000"
+                            android:drawableLeft="@drawable/search"
+                            android:drawablePadding="6dp"
+                            android:hint="Search..."
+                            android:lines="1"
+                            android:padding="8dp"
+                            android:textColorHint="@color/textSub"
+                            android:textSize="@dimen/text" />
+                    </LinearLayout>
+
+
+                    <ListView
+                        android:id="@+id/filter_listview"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@+id/search"
+                        android:layout_marginBottom="45dp"
+                        android:background="#f2f3f4"
+                        android:divider="#00000000"
+                        android:scrollbars="none" />
+
+
+                </LinearLayout>
+                <!--***************RANGEBAR*****************-->
+                <LinearLayout
+                    android:id="@+id/pricelist"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+
+                    <com.smart.pay.views.RangeBar xmlns:custom="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/rangebar1"
+                        android:layout_width="match_parent"
+                        android:layout_height="72dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginTop="26dp"
+                        android:layout_marginRight="16dp"
+                        custom:pinMaxFont="10sp"
+                        custom:tickEnd="1000"
+                        custom:tickInterval="1"
+                        custom:tickStart="0" />
+
+
+                    <LinearLayout
+                        android:id="@+id/pbutton"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_below="@+id/rangebar1"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="10dp"
+                        android:orientation="horizontal"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="20dp">
+
+                        <Button
+                            android:id="@+id/rang1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="1"
+                            android:background="#fcfcfc"
+                            android:clickable="false"
+                            android:text="$ 0"
+                            android:textColor="@color/Tex"
+                            android:textSize="16dp" />
+
+                        <Button
+                            android:id="@+id/rang2"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10dp"
+                            android:layout_weight="1"
+                            android:background="#fcfcfc"
+                            android:clickable="false"
+                            android:text="$ 1000"
+                            android:textColor="@color/Tex"
+                            android:textSize="16dp" />
+
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <!--*********COLOURS**********-->
+                <LinearLayout
+                    android:id="@+id/colourlist"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <com.smart.pay.views.ExpandableHeightGridView
+                        android:id="@+id/filter_gridview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginBottom="16dp"
+                        android:background="#00000000"
+                        android:horizontalSpacing="16dp"
+                        android:isScrollContainer="false"
+                        android:numColumns="3"
+                        android:stretchMode="columnWidth"
+                        android:verticalSpacing="16dp" />
+                </LinearLayout>
+
+
+                <!--*********DISCOUNT***********-->
+
+                <LinearLayout
+                    android:id="@+id/discountlist"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+
+                    <ListView
+                        android:id="@+id/discountview"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="45dp"
+                        android:background="#f2f3f4"
+                        android:divider="#00000000"
+                        android:scrollbars="none" />
+
+
+                </LinearLayout>
+
+
+                <com.smart.pay.views.MyTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/colorGreenLight"
+                    android:gravity="center"
+                    android:padding="16dp"
+                    android:text="APPLY"
+                    android:textColor="@color/White" />
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

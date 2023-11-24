@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linear1"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:layout_below="@+id/toolbar"
+    android:background="@drawable/toolbarbg"
+    android:orientation="horizontal"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp">
+
+    <!--********story2 by and refine*********-->
+
+
+    <com.smart.pay.views.MyTextView
+        android:id="@+id/txtSortBy"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_toLeftOf="@+id/layout123"
+        android:background="@drawable/forgot_password_bg"
+        android:drawableLeft="@drawable/arrowupdown"
+        android:gravity="center"
+        android:text="SORT BY"
+        android:textColor="@color/Tex" />
+
+    <View
+        android:id="@+id/layout123"
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:background="@color/colordevider"></View>
+
+
+    <com.smart.pay.views.MyTextView
+        android:id="@+id/txtRefineBy"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_toLeftOf="@+id/gridviewicon"
+        android:layout_toRightOf="@+id/layout123"
+        android:layout_weight="0.25"
+        android:background="@drawable/forgot_password_bg"
+        android:drawableLeft="@drawable/refine"
+        android:drawablePadding="10dp"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="REFINE"
+        android:textColor="@color/Tex" />
+
+
+    <ImageView
+        android:id="@+id/gridviewicon"
+        android:layout_width="20dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/gridviewicon"
+        android:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/listviewicon"
+        android:layout_width="20dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/listviewicon"
+        android:visibility="gone" />
+
+
+</RelativeLayout>
+

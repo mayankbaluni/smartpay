@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/edit_text_rounded"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+
+        <com.smart.pay.views.MyTextView
+            android:id="@+id/coachName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="1A- First Class AC"
+            android:textColor="@color/Black"
+            android:textSize="10sp" />
+
+        <com.smart.pay.views.MyTextView
+            android:id="@+id/coachPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Rs. 1000"
+            android:textColor="@color/Black"
+            android:textSize="10sp" />
+
+        <com.smart.pay.views.MyTextView
+            android:id="@+id/coachAvailability"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="AVAILABLE"
+            android:textColor="@color/colorGreenLight"
+            android:textSize="10sp" />
+
+    </LinearLayout>
+
+    <com.smart.pay.views.MyTextView
+        android:id="@+id/updatedTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="5dp"
+        android:text="4 hours ago"
+        android:textColor="@color/grey_light_primary"
+        android:textSize="10sp" />
+
+
+</LinearLayout>

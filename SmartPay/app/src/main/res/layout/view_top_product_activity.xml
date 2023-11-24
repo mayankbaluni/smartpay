@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f4f4f4"
+    tools:context=".activity.mall.ProductsActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"></include>
+
+
+    <!--********story2 by and refine*********-->
+
+    <LinearLayout
+        android:id="@+id/linear1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:background="@drawable/toolbarbg"
+        android:orientation="horizontal"
+        android:paddingTop="10dp"
+        android:paddingBottom="16dp">
+
+        <com.smart.pay.views.MyTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/arrowupdown"
+            android:gravity="center"
+            android:text="STORY BY"
+            android:textColor="@color/Tex"
+
+            />
+
+        <View
+
+            android:layout_width="1dp"
+            android:layout_height="21dp"
+            android:background="@color/colordevider"></View>
+
+        <com.smart.pay.views.MyTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/refine"
+            android:drawablePadding="10dp"
+            android:gravity="center"
+            android:text="REFINE"
+            android:textColor="@color/Tex" />
+
+        <View
+
+            android:layout_width="1dp"
+            android:layout_height="21dp"
+            android:layout_marginRight="30dp"
+            android:background="@color/colordevider"></View>
+
+        <ImageView
+            android:id="@+id/gridviewicon"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/gridviewicon"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/listviewicon"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/listviewicon"
+            android:visibility="gone" />
+
+
+    </LinearLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="103dp"
+        android:scrollbars="none">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <com.smart.pay.views.ExpandableHeightGridView
+                android:id="@+id/gridview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="#f2f3f4"
+                android:horizontalSpacing="5dp"
+                android:isScrollContainer="false"
+                android:numColumns="2"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="5dp"
+                android:visibility="visible" />
+
+
+            <com.smart.pay.views.ExpandableHeightListView
+                android:id="@+id/listview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#f2f3f4"
+                android:visibility="gone" />
+
+            <include
+                layout="@layout/empty_no_products_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:visibility="gone" />
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <com.smart.pay.views.MyTextView
+        android:id="@+id/txtSubcat2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp"
+        android:layout_weight="1"
+        android:background="@drawable/subcat_bg"
+        android:drawableLeft="@drawable/ic_profile_settings"
+        android:drawableRight="@mipmap/ic_forward"
+        android:gravity="center"
+        android:padding="12dp"
+        android:text="Update Phone Number"
+        android:textColor="@color/Tex"
+        android:textSize="14sp" />
+
+    <com.smart.pay.views.MyTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp"
+        android:layout_weight="1"
+        android:background="@drawable/subcat_bg"
+        android:drawableLeft="@drawable/ic_profile_settings"
+        android:drawableRight="@mipmap/ic_forward"
+        android:gravity="center"
+        android:padding="12dp"
+        android:text="Delivery Address"
+        android:textColor="@color/Tex"
+        android:textSize="14sp" />
+
+    <com.smart.pay.views.MyTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp"
+        android:layout_weight="1"
+        android:background="@drawable/subcat_bg"
+        android:drawableLeft="@drawable/ic_profile_settings"
+        android:drawableRight="@mipmap/ic_forward"
+        android:gravity="center"
+        android:padding="12dp"
+        android:text="Invite on SmartPay"
+        android:textColor="@color/Tex"
+        android:textSize="14sp" />
+
+    <com.smart.pay.views.MyTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp"
+        android:layout_weight="1"
+        android:background="@drawable/subcat_bg"
+        android:drawableLeft="@drawable/ic_logout"
+        android:drawableRight="@mipmap/ic_forward"
+        android:gravity="center"
+        android:padding="12dp"
+        android:text="Logout"
+        android:textColor="@color/Tex"
+        android:textSize="14sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey_light_tertiary" />
+
+
+</LinearLayout>

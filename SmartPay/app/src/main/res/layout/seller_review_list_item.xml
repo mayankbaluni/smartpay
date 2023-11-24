@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <RelativeLayout
+        android:id="@+id/rl1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rect"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:id="@+id/linear1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.smart.pay.views.MyTextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Supper Cool"
+                android:textColor="@color/Tex"
+                android:textSize="17dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linear1"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <RatingBar
+                android:id="@+id/ratingbar"
+                style="?android:attr/ratingBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:isIndicator="false" />
+
+            <com.smart.pay.views.MyTextView
+                android:id="@+id/rateno"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:text="5/5"
+                android:textColor="@color/textSub"
+                android:textSize="@dimen/textsub" />
+
+
+            <com.smart.pay.views.MyTextView
+                android:id="@+id/date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="Apr 17,2015"
+                android:textColor="@color/textSub"
+                android:textSize="@dimen/textsub" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/linear3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linear2"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <com.smart.pay.views.MyTextView
+                android:id="@+id/username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Erik Mark"
+                android:textColor="@color/Tex"
+                android:textSize="@dimen/textsub"
+
+                />
+
+
+            <com.smart.pay.views.MyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/guard"
+                android:drawablePadding="6dp"
+                android:text="Verified Buyer"
+                android:textColor="@color/textSub"
+                android:textSize="@dimen/textsub"
+
+                />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/linear4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linear3"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <com.smart.pay.views.MyTextView
+                android:id="@+id/comments"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="3dp"
+                android:maxLines="4"
+                android:text="100% Payment Protection. 7days easy return in case item is defective or damaged or different from what was described."
+                android:textColor="@color/textSub"
+                android:textSize="@dimen/textsub" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/rl1"
+        android:background="@color/grey_light_secondary"></View>
+</RelativeLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fff"
+    android:orientation="vertical"
+    android:paddingBottom="10dp">
+
+
+    <com.smart.pay.views.MyTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        android:gravity="left"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:text="Top Shopping Offers"
+        android:textColor="@color/Black"
+        android:textSize="14sp" />
+
+
+    <com.smart.pay.views.ExpandableHeightGridView
+        android:id="@+id/topShoppingOffersGridView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f2f3f4"
+        android:horizontalSpacing="2dp"
+        android:isScrollContainer="false"
+        android:numColumns="3"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="2dp">
+
+    </com.smart.pay.views.ExpandableHeightGridView>
+
+    <ProgressBar
+        android:id="@+id/topOfferProgressBar"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center" />
+
+
+</LinearLayout>

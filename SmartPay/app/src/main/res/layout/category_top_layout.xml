@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/topLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fff"
+    android:orientation="vertical"
+    android:paddingBottom="10dp">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+        <com.smart.pay.views.MyTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_gravity="center"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="Top Categories"
+            android:textColor="@color/Black"
+            android:textSize="14sp" />
+
+        <com.smart.pay.views.MyTextView
+            android:id="@+id/btnViewAll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="View All"
+            android:textColor="@color/colorBlueLight"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+
+
+    <com.smart.pay.views.ExpandableHeightGridView
+        android:id="@+id/topCategoriesGridView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f2f3f4"
+        android:horizontalSpacing="2dp"
+        android:isScrollContainer="false"
+        android:numColumns="3"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="2dp">
+
+    </com.smart.pay.views.ExpandableHeightGridView>
+
+    <ProgressBar
+        android:id="@+id/topCategoriesProgressBar"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center" />
+
+
+</LinearLayout>

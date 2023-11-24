@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_grey">
+
+    <include layout="@layout/toolbar" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:layout_margin="10dp"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <CalendarView
+                android:id="@+id/simpleCalendarView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/edit_text_no_round"
+                android:focusedMonthDateColor="@color/colorPrimary"
+                android:maxDate="05/22/2099" />
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/simpleCalendarView"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/edit_text_no_round"
+                android:padding="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/txtSelectTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="center|left"
+                        android:padding="10dp"
+                        android:text="Select Time of Visit"
+                        android:textColor="@color/Black"
+                        android:textSize="14sp" />
+
+                    <View
+                        android:id="@+id/view1"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_below="@+id/txtSelectTime"
+                        android:background="@color/light_grey" />
+
+
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/view1"
+                        android:scrollbars="none">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:padding="10dp">
+
+
+                            <TextView
+                                android:id="@+id/txtTime1"
+                                android:layout_width="70dp"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_marginLeft="10dp"
+                                android:background="@drawable/round_outline3"
+                                android:gravity="center"
+                                android:padding="10dp"
+                                android:text="09 AM"
+                                android:textColor="@color/Black"
+                                android:textSize="14sp" />
+
+
+                            <TextView
+                                android:id="@+id/txtTime2"
+
+                                android:layout_width="70dp"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_marginLeft="10dp"
+                                android:background="@drawable/round_outline3"
+                                android:gravity="center"
+                                android:padding="10dp"
+                                android:text="10 AM"
+                                android:textColor="@color/Black"
+                                android:textSize="14sp" />
+
+
+                            <TextView
+                                android:id="@+id/txtTime3"
+
+                                android:layout_width="70dp"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_marginLeft="10dp"
+                                android:background="@drawable/round_outline3"
+                                android:gravity="center"
+                                android:padding="10dp"
+                                android:text="11 AM"
+                                android:textColor="@color/Black"
+                                android:textSize="14sp" />
+
+
+                            <TextView
+                                android:id="@+id/txtTime4"
+                                android:layout_width="70dp"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_marginLeft="10dp"
+                                android:background="@drawable/round_outline3"
+                                android:gravity="center"
+                                android:padding="10dp"
+                                android:text="12 AM"
+                                android:textColor="@color/Black"
+                                android:textSize="14sp" />
+
+
+                            <TextView
+                                android:id="@+id/txtTime5"
+                                android:layout_width="70dp"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_marginLeft="10dp"
+                                android:background="@drawable/round_outline3"
+                                android:gravity="center"
+                                android:padding="10dp"
+                                android:text="01 PM"
+                                android:textColor="@color/Black"
+                                android:textSize="14sp" />
+
+
+                            <TextView
+                                android:id="@+id/txtTime6"
+                                android:layout_width="70dp"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_marginLeft="10dp"
+                                android:background="@drawable/round_outline3"
+                                android:gravity="center"
+                                android:padding="10dp"
+                                android:text="02 PM"
+                                android:textColor="@color/Black"
+                                android:textSize="14sp" />
+
+
+                            <TextView
+                                android:id="@+id/txtTime7"
+                                android:layout_width="70dp"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_marginLeft="10dp"
+                                android:background="@drawable/round_outline3"
+                                android:gravity="center"
+                                android:padding="10dp"
+                                android:text="03 PM"
+                                android:textColor="@color/Black"
+                                android:textSize="14sp" />
+
+
+                            <TextView
+                                android:id="@+id/txtTime8"
+                                android:layout_width="70dp"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_marginLeft="10dp"
+                                android:background="@drawable/round_outline3"
+                                android:gravity="center"
+                                android:padding="10dp"
+                                android:text="04 PM"
+                                android:textColor="@color/Black"
+                                android:textSize="14sp" />
+
+
+                            <TextView
+                                android:id="@+id/txtTime9"
+                                android:layout_width="70dp"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_marginLeft="10dp"
+                                android:background="@drawable/round_outline3"
+                                android:gravity="center"
+                                android:padding="10dp"
+                                android:text="05 PM"
+                                android:textColor="@color/Black"
+                                android:textSize="14sp" />
+
+
+                            <TextView
+                                android:id="@+id/txtTime10"
+                                android:layout_width="70dp"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_marginLeft="10dp"
+                                android:background="@drawable/round_outline3"
+                                android:gravity="center"
+                                android:padding="10dp"
+                                android:text="06 PM"
+                                android:textColor="@color/Black"
+                                android:textSize="14sp" />
+
+
+                            <TextView
+                                android:id="@+id/txtTime11"
+                                android:layout_width="70dp"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_marginLeft="10dp"
+                                android:background="@drawable/round_outline3"
+                                android:gravity="center"
+                                android:padding="10dp"
+                                android:text="07 PM"
+                                android:textColor="@color/Black"
+                                android:textSize="14sp" />
+
+
+                            <TextView
+                                android:id="@+id/txtTime12"
+                                android:layout_width="70dp"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_marginLeft="10dp"
+                                android:background="@drawable/round_outline3"
+                                android:gravity="center"
+                                android:padding="10dp"
+                                android:text="08 PM"
+                                android:textColor="@color/Black"
+                                android:textSize="14sp" />
+
+
+                            <TextView
+                                android:id="@+id/txtTime13"
+                                android:layout_width="70dp"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_marginLeft="10dp"
+                                android:background="@drawable/round_outline3"
+                                android:gravity="center"
+                                android:padding="10dp"
+                                android:text="09 PM"
+                                android:textColor="@color/Black"
+                                android:textSize="14sp" />
+
+
+                        </LinearLayout>
+
+
+                    </HorizontalScrollView>
+
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/card1"
+                android:layout_marginTop="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="Service Fees"
+                        android:textColor="@color/Black"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/serviceFees"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="10dp"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="1000 $"
+                        android:textColor="@color/Black"
+                        android:textSize="14sp" />
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+
+    <TextView
+        android:id="@+id/confirmBooking"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/round_outline2"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="CONFIRM"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

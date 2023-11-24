@@ -1,0 +1,436 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fff"
+    android:orientation="vertical"
+    android:paddingBottom="10dp">
+
+
+    <com.smart.pay.views.MyTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        android:gravity="left"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:text="Shop by Category"
+        android:textColor="@color/Black"
+        android:textSize="14sp" />
+
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:scrollbars="none">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="horizontal">
+
+
+            <LinearLayout
+                android:layout_width="70dp"
+                android:layout_height="90dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/no_round_bg1"
+                android:orientation="vertical">
+
+                <com.smart.pay.views.MyTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="4dp"
+                    android:gravity="center"
+                    android:padding="2dp"
+                    android:text="All Categories"
+                    android:textColor="@color/Black"
+                    android:textSize="10sp" />
+
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center"
+                    android:src="@mipmap/ic_top_offer1" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="70dp"
+                android:layout_height="90dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/no_round_bg1"
+                android:orientation="vertical">
+
+                <com.smart.pay.views.MyTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="4dp"
+                    android:gravity="center"
+                    android:padding="2dp"
+                    android:text="Mobiles"
+                    android:textColor="@color/Black"
+                    android:textSize="10sp" />
+
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center"
+                    android:src="@mipmap/cat_mobile" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="70dp"
+                android:layout_height="90dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/no_round_bg1"
+                android:orientation="vertical">
+
+                <com.smart.pay.views.MyTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="4dp"
+                    android:gravity="center"
+                    android:padding="2dp"
+                    android:text="Men's Fashion"
+                    android:textColor="@color/Black"
+                    android:textSize="10sp" />
+
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center"
+                    android:src="@mipmap/cat_men" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="70dp"
+                android:layout_height="90dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/no_round_bg1"
+                android:orientation="vertical">
+
+                <com.smart.pay.views.MyTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="4dp"
+                    android:gravity="center"
+                    android:padding="2dp"
+                    android:text="Women's Fashion"
+                    android:textColor="@color/Black"
+                    android:textSize="10sp" />
+
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center"
+                    android:src="@mipmap/cat_women" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="70dp"
+                android:layout_height="90dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/no_round_bg1"
+                android:orientation="vertical">
+
+                <com.smart.pay.views.MyTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="4dp"
+                    android:gravity="center"
+                    android:padding="2dp"
+                    android:text="Grocery"
+                    android:textColor="@color/Black"
+                    android:textSize="10sp" />
+
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center"
+                    android:src="@mipmap/cat_grocery" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="70dp"
+                android:layout_height="90dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/no_round_bg1"
+                android:orientation="vertical">
+
+                <com.smart.pay.views.MyTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="4dp"
+                    android:gravity="center"
+                    android:padding="2dp"
+                    android:text="Electronics"
+                    android:textColor="@color/Black"
+                    android:textSize="10sp" />
+
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center"
+                    android:src="@mipmap/cat_electronics" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="70dp"
+                android:layout_height="90dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/no_round_bg1"
+                android:orientation="vertical">
+
+                <com.smart.pay.views.MyTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="4dp"
+                    android:gravity="center"
+                    android:padding="2dp"
+                    android:text="TV, AC's &amp; Appliances"
+                    android:textColor="@color/Black"
+                    android:textSize="10sp" />
+
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center"
+                    android:src="@mipmap/cat_tvac" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="70dp"
+                android:layout_height="90dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/no_round_bg1"
+                android:orientation="vertical">
+
+                <com.smart.pay.views.MyTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="4dp"
+                    android:gravity="center"
+                    android:padding="2dp"
+                    android:text="Laptop &amp; PC's"
+                    android:textColor="@color/Black"
+                    android:textSize="10sp" />
+
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center"
+                    android:src="@mipmap/cat_pc" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="70dp"
+                android:layout_height="90dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/no_round_bg1"
+                android:orientation="vertical">
+
+                <com.smart.pay.views.MyTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="4dp"
+                    android:gravity="center"
+                    android:padding="2dp"
+                    android:text="Home &amp; Kitchen"
+                    android:textColor="@color/Black"
+                    android:textSize="10sp" />
+
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center"
+                    android:src="@mipmap/cat_kitcheb" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="70dp"
+                android:layout_height="90dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/no_round_bg1"
+                android:orientation="vertical">
+
+                <com.smart.pay.views.MyTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="4dp"
+                    android:gravity="center"
+                    android:padding="2dp"
+                    android:text="Kids Toys"
+                    android:textColor="@color/Black"
+                    android:textSize="10sp" />
+
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center"
+                    android:src="@mipmap/cat_kids" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="70dp"
+                android:layout_height="90dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/no_round_bg1"
+                android:orientation="vertical">
+
+                <com.smart.pay.views.MyTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="4dp"
+                    android:gravity="center"
+                    android:padding="2dp"
+                    android:text="Health &amp; Fitness"
+                    android:textColor="@color/Black"
+                    android:textSize="10sp" />
+
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center"
+                    android:src="@mipmap/cat_health" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="70dp"
+                android:layout_height="90dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/no_round_bg1"
+                android:orientation="vertical">
+
+                <com.smart.pay.views.MyTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="4dp"
+                    android:gravity="center"
+                    android:padding="2dp"
+                    android:text="Beauty &amp; Grooming"
+                    android:textColor="@color/Black"
+                    android:textSize="10sp" />
+
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center"
+                    android:src="@mipmap/cat_beauty" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="70dp"
+                android:layout_height="90dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/no_round_bg1"
+                android:orientation="vertical">
+
+                <com.smart.pay.views.MyTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="4dp"
+                    android:gravity="center"
+                    android:padding="2dp"
+                    android:text="Bags &amp; Luggage"
+                    android:textColor="@color/Black"
+                    android:textSize="10sp" />
+
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center"
+                    android:src="@mipmap/cat_bags" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="70dp"
+                android:layout_height="90dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/no_round_bg1"
+                android:orientation="vertical">
+
+                <com.smart.pay.views.MyTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="4dp"
+                    android:gravity="center"
+                    android:padding="2dp"
+                    android:text="Gift Vouchers"
+                    android:textColor="@color/Black"
+                    android:textSize="10sp" />
+
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center"
+                    android:src="@mipmap/cat_giftvoucher" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </HorizontalScrollView>
+
+
+</LinearLayout>

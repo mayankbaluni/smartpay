@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimary"
+    android:minHeight="?attr/actionBarSize"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+    local:titleTextAppearance="@style/AppTheme.Toolbar.Title"
+    local:titleTextColor="@color/white">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <com.smart.pay.views.MyEditText
+            android:id="@+id/searchtexttoolbar"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_weight="0.15"
+            android:background="@drawable/searchbg"
+            android:drawablePadding="6dp"
+            android:elevation="5dp"
+            android:hint="Find Beast Services &amp; Products"
+            android:maxLines="1"
+            android:padding="10dp"
+            android:tag="sticky"
+            android:textColor="@color/textSub"
+            android:textColorHint="@color/textSub"
+            android:textSize="@dimen/text" />
+
+
+        <ImageView
+            android:id="@+id/btnSearch"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="0.85"
+            android:background="@drawable/searchbg"
+            android:padding="10dp"
+            android:src="@drawable/search" />
+
+    </LinearLayout>
+
+
+</androidx.appcompat.widget.Toolbar>
+
+
+
+

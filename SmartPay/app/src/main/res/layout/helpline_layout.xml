@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+    <include layout="@layout/toolbar" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_margin="20dp"
+        android:src="@mipmap/ic_helpline" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/grey_light_secondary" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Call our 24 hour hotline number if you any query."
+        android:textSize="12sp" />
+
+
+    <TextView
+        android:id="@+id/support_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:drawableLeft="@mipmap/ic_call"
+        android:gravity="left"
+        android:padding="10dp"
+        android:text="(+91)999999999"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/support_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:drawableLeft="@mipmap/ic_email"
+        android:gravity="left"
+        android:padding="10dp"
+        android:text=""
+        android:textSize="20sp" />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/grey_light_secondary" />
+
+
+    <TextView
+        android:id="@+id/txtVisitWebsite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/pink_click_bg"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="VISIT OUR WEBSITE"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+
+</LinearLayout>
